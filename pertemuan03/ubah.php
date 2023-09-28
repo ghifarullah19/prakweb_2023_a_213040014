@@ -26,19 +26,19 @@ require 'header.php';
         <input type="hidden" name="id" value="<?= $buku['id']; ?>">
         <div class="mb-3">
           <label for="judul" class="form-label">Judul</label>
-          <input type="text" class="form-control" id="judul" name="judul" required">
+          <input type="text" class="form-control" id="judul" name="judul" value="<?= $buku['judul']; ?>">
         </div>
         <div class="mb-3">
           <label for="penulis" class="form-label">Penulis</label>
-          <input type="text" class="form-control" id="penulis" name="penulis" required>
+          <input type="text" class="form-control" id="penulis" name="penulis" value="<?= $buku['penulis']; ?>">
         </div>
         <div class="mb-3">
           <label for="penerbit" class="form-label">Penerbit</label>
-          <input type="text" class="form-control" id="penerbit" name="penerbit">
+          <input type="text" class="form-control" id="penerbit" value="<?= $buku['penerbit']; ?>" name="penerbit">
         </div>
         <div class="mb-3">
           <label for="tahun_terbit" class="form-label">Tahun Terbit</label>
-          <input type="text" class="form-control" id="tahun_terbit" name="tahun_terbit">
+          <input type="text" class="form-control" id="tahun_terbit" value="<?= $buku['tahun_terbit']; ?>" name="tahun_terbit">
         </div>
         <button type="submit" class="btn btn-primary" name="ubah">Ubah Data Buku</button>
       </form>

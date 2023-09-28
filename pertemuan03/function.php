@@ -67,10 +67,12 @@ function ubah($buku) {
     
     // Membuat query
     $query_ubah = "UPDATE buku SET 
-    judul = '$judul'
-    penulis = '$penulis'
-    penerbit = '$penerbit'
+    judul = '$judul',
+    penulis = '$penulis',
+    penerbit = '$penerbit',
     tahun_terbit = '$tahun_terbit'
+    WHERE 
+    id = '$id';
     ";
     
     // Mengirim query ke db
